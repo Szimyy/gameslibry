@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>All Game Creators</title>
+</head>
+<body>
+<h1>All Game Creators</h1>
+
+<table>
+    <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Country</th>
+    </tr>
+    <tr th:each="creator : ${creator}">
+        <td th:text="${creator.id}"></td>
+        <td th:text="${creator.firstName}"></td>
+        <td th:text="${creator.Country}"></td>
+    </tr>
+</table>
+</body>
+</html>
